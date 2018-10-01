@@ -79,6 +79,7 @@ INSTALL_REQUIRES = [
     'plone.registry',
     'plone.schema',
     'plone.session',
+    'plone.staticresources',
     'plone.subrequest',
     'plone.theme',
     'plonetheme.barceloneta',
