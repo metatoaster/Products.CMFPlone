@@ -94788,5 +94788,5 @@ require([
   'use strict';
 });
 
-define("/work/playground/plone/plone.coredev-5.2/src/Products.CMFPlone/Products/CMFPlone/static/plone-logged-in.js", function(){});
+define("/Volumes/Work/Personal/Plone/Core/buildout.coredev/src/Products.CMFPlone/Products/CMFPlone/static/plone-logged-in.js", function(){});
 
