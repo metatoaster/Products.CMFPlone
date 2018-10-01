@@ -40,6 +40,9 @@ New features:
 
 Bug fixes:
 
+- Fix wrong CSS property to allow correct word-break.
+  [tmassman]
+
 - Remove the devdependencies from bower.json - they are just used for running tests in mockup, not here.
   [sunew]
 
