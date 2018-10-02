@@ -10,7 +10,7 @@ Changelog
 
 Breaking changes:
 
-- Factor out all static resources into plone.staticresources.
+- Factor out all static resources and the ``plone-compile-resources`` script into plone.staticresources.
   [thet]
 
 - Remove all dependencies on plone.app.controlpanel.
