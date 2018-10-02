@@ -17,6 +17,7 @@ Breaking changes:
   Third party code need either to depend on plone.app.controlpanel 4.0,
   which is a backward compatibilit package only, or also update to not depend on it anymore.
   [jensens]
+
 - Removed getObjectsFromPathList.py skin script. #1801
   [reinhardt]
 
@@ -47,6 +48,9 @@ New features:
 
 
 Bug fixes:
+
+- Run ``combine_bundles`` import step only if ``plone.resources.configjs`` is found in registry to avoid running it too early during the plone.staticresources profile import.
+  [thet]
 
 - Removed the ``raiseUnauthorized`` skin script.
   If you use this, please do permission checking in your own Python code instead (likely in a browser view).

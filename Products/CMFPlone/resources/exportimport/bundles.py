@@ -4,6 +4,11 @@ from plone.registry.interfaces import IRegistry
 from zope.component import queryUtility
 from zope.globalrequest import getRequest
 
+import logging
+
+
+logger = logging.getLogger(__file__)
+
 
 def combine(context):
 
@@ -22,7 +27,7 @@ def combine(context):
     found = False
     for filepath in filepaths:
         body = context.readDataFile(filepath)
-        if body is not None and 'IBundleRegistry' in body:
+        if body is not None and 'plone.resources.configjs' in body:
             found = True
             break
     if not found:
@@ -37,6 +42,7 @@ def combine(context):
     if request is not None:
         orig_header = request.response.getHeader('Content-Type')
     combine_bundles(site)
+    logger.info('combined bundles')
     if request is None:
         # we are done
         return
